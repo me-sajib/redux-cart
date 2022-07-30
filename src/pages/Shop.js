@@ -4,13 +4,13 @@ import { connect } from "react-redux";
 import Products from "./Products";
 
 const Shop = (props) => {
-  const { products } = props;
+  const { products, addToCart } = props;
 
   return (
     <div>
       <h2>Our Best Products</h2>
       {products.map((product) => (
-        <Products key={product.id} product={product} />
+        <Products key={product.id} product={product} addToCart={addToCart} />
       ))}
     </div>
   );

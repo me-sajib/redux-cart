@@ -9,10 +9,9 @@ export const addToCart = (id, name) => {
   };
 };
 
-export const removeToCart = (id, name) => {
+export const removeToCart = (id) => {
   return {
     type: REMOVE_TO_CART,
-    id: id,
-    name,
+    cartId: id,
   };
 };
